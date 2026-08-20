@@ -1767,33 +1767,30 @@ async function submitForm(){
 
         else{
 
-            document
-            .getElementById(
-                "paymentSection"
-            )
-            .classList
-            .add("hidden");
+    // Hide payment section
+    document
+    .getElementById("paymentSection")
+    .classList
+    .add("hidden");
 
 
-            document
-            .getElementById(
-                "paymentInfo"
-            )
-            .innerHTML =
+    // Show success message
+    document
+    .getElementById("resultSummary")
+    .innerHTML +=
 
-            `<div class="info">
+    `<div class="info">
 
-            <b>✅ Registration Completed</b>
+        <b>✅ Registration Completed</b>
 
-            <br><br>
+        <br><br>
 
-            No payment is required because
-            the total price is Rp 0.
+        No payment is required because
+        the total price is Rp 0.Thank You
 
-            </div>`;
+    </div>`;
 
-        }
-
+}
 
     }
 
